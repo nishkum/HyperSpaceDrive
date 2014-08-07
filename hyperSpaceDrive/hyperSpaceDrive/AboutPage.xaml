@@ -1,0 +1,76 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="hyperSpaceDrive.AboutPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot">
+        <Grid.Background>
+            <ImageBrush Stretch="UniformToFill" ImageSource="/Background.png"/>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Image Margin="25,0,10,175" Source="/icon.png" />
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <TextBlock HorizontalAlignment="Center" 
+                       FontSize="30"
+                       Margin="123,0,138,382" 
+                       TextWrapping="Wrap" 
+                       VerticalAlignment="Center" 
+                       Height="35" 
+                       Width="195"
+                       Foreground="#FFF7E500"
+                       LineHeight="42"
+                       Text="Devansh Dalal"/>
+            <TextBlock HorizontalAlignment="Center" 
+                        FontSize="30"
+                       Margin="123,74,118,293" 
+                       TextWrapping="Wrap" 
+                       VerticalAlignment="Center" 
+                       Height="50" 
+                       Width="215"
+                       Foreground="#FFFFEC00"
+                       LineHeight="42"
+                       Text="Nishant Kumar" 
+                       RenderTransformOrigin="0.5,2.24"/>
+            <TextBlock HorizontalAlignment="Center" 
+                       FontSize="30"
+                       
+                       Margin="123,149,38,218" 
+                       TextWrapping="Wrap" 
+                       VerticalAlignment="Center" 
+                       Height="50" 
+                       Width="295"
+                       Foreground="#FFF5E300"
+                       LineHeight="42"
+                       Text="Prateek Chaudhry"/>
+            <TextBlock HorizontalAlignment="Center" 
+                       FontSize="36"
+                       Margin="53,-151,68,444" 
+                       TextWrapping="Wrap" 
+                       VerticalAlignment="Center" 
+                       Height="124" 
+                       Width="335"
+                       Foreground="#FFF5E510"
+                       LineHeight="42"
+                       Text="THE MEGA CODERS"/>
+        </Grid>
+    </Grid>
+
+
+</phone:PhoneApplicationPage>
